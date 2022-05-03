@@ -1,0 +1,12 @@
+SET SERVEROUTPUT ON;
+DECLARE
+Inicio INTEGER:=&entrada;
+Fin INTEGER:=&entrada;
+BEGIN
+FOR i IN Inicio..Fin LOOP
+    IF (MOD(i,4)=0)THEN
+        DBMS_OUTPUT.PUT_LINE(i);
+    END IF;
+END LOOP;
+END;
+/
